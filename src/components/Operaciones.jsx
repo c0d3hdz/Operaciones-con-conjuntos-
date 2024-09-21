@@ -21,14 +21,14 @@ const SetOperations = () => {
         setResult([...diffA, ...diffB])
     }
     return (
-        <div>
-            <div className="grid grid-cols-2 gap-5 w-full px-4">
+        <div className="flex flex-col m-auto w-auto text-center">
+            <div className="grid grid-cols-2 gap-5 w-full px-4 max-md:flex max-md:flex-col">
                 <div>
                     <input
                         type="text"
                         placeholder="Conjunto A (separa con comas, evita los espacios)"
                         onChange={e => setSetA(processInput(e.target.value))}
-                        className="h-full w-full rounded-[7px] border border-blue-500 bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-white outline-none transition-all placeholder-shown:border placeholder-shown:border-green-500 focus:border-2 focus:border-green-500"
+                        className="h-full w-80 rounded-[7px] border border-blue-500 bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-white outline-none transition-all placeholder-shown:border placeholder-shown:border-green-500 focus:border-2 focus:border-green-500"
                     />
                 </div>
                 <div>
@@ -36,32 +36,32 @@ const SetOperations = () => {
                         type="text"
                         placeholder="Conjunto B (separa con comas, evita los espacios)"
                         onChange={e => setSetB(processInput(e.target.value))}
-                        className="h-full w-full rounded-[7px] border border-orange-500 bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-white outline-none transition-all placeholder-shown:border placeholder-shown:border-green-500 focus:border-2 focus:border-green-500"
+                        className="h-full w-80 rounded-[7px] border border-orange-500 bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-white outline-none transition-all placeholder-shown:border placeholder-shown:border-green-500 focus:border-2 focus:border-green-500"
                     />
                 </div>
             </div>
 
             <div className="flex flex-wrap gap-4 mt-5 justify-center w-full px-4">
                 <button
-                    className="w-full md:w-auto px-6 py-2 text-sm font-semibold rounded-full border border-[#7629c8] text-[#7629c8] transition-all hover:rotate-3 hover:scale-105 hover:shadow-lg active:scale-95"
+                    className="w-min md:w-auto px-6 py-2 text-sm font-semibold rounded-full border border-[#7629c8] text-[#7629c8] transition-all hover:rotate-3 hover:scale-105 hover:shadow-lg active:scale-95"
                     onClick={union}
                 >
                     Unión
                 </button>
                 <button
-                    className="w-full md:w-auto px-6 py-2 text-sm font-semibold rounded-full border border-[#7629c8] text-[#7629c8] transition-all hover:rotate-3 hover:scale-105 hover:shadow-lg active:scale-95"
+                    className="w-min md:w-auto px-6 py-2 text-sm font-semibold rounded-full border border-[#7629c8] text-[#7629c8] transition-all hover:rotate-3 hover:scale-105 hover:shadow-lg active:scale-95"
                     onClick={intersection}
                 >
                     Intersección
                 </button>
                 <button
-                    className="w-full md:w-auto px-6 py-2 text-sm font-semibold rounded-full border border-[#7629c8] text-[#7629c8] transition-all hover:rotate-3 hover:scale-105 hover:shadow-lg active:scale-95"
+                    className="w-min md:w-auto px-6 py-2 text-sm font-semibold rounded-full border border-[#7629c8] text-[#7629c8] transition-all hover:rotate-3 hover:scale-105 hover:shadow-lg active:scale-95"
                     onClick={difference}
                 >
                     Diferencia
                 </button>
                 <button
-                    className="w-full md:w-auto px-6 py-2 text-sm font-semibold rounded-full border border-[#7629c8] text-[#7629c8] transition-all hover:rotate-3 hover:scale-105 hover:shadow-lg active:scale-95"
+                    className="w-min md:w-auto px-6 py-2 text-sm font-semibold rounded-full border border-[#7629c8] text-[#7629c8] transition-all hover:rotate-3 hover:scale-105 hover:shadow-lg active:scale-95"
                     onClick={symmetricDifference}
                 >
                     Diferencia Simétrica
