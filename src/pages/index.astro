@@ -2,10 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import SetOperations from '../components/Operaciones';
 import Header from '../components/Head.astro'
+import Background from '../components/Background.astro'
 ---
 
 <Layout title="Operaciones con conjuntos.">
 	<main>
+		<Background/>
 		<Header/>
 		<SetOperations client:visible/>
 	</main>
