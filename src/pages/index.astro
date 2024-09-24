@@ -17,11 +17,15 @@ import Background from '../components/Background.astro'
 	main {
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
 	}
+	@media (max-width: 1250px) {
+		main{
+			padding-top: 50px;
+			margin-top: calc(100%/ 4);
+		}
+    }
 
 </style>
