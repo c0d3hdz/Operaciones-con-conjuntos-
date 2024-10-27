@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import SetOperations from '../components/Operaciones';
 import Header from '../components/Head.astro'
 import Background from '../components/Background.astro'
-
+import ContentInfo from '../components/Content_info.astro';
 ---
 
 <Layout title="Operaciones con conjuntos.">
@@ -11,6 +11,7 @@ import Background from '../components/Background.astro'
 		<Background/>
 		<Header/>
 		<SetOperations client:visible/>	
+		<ContentInfo/>
 	</main>
 
 </Layout>
