@@ -44,10 +44,18 @@ import Footer from '../components/Footer.astro';
 		top: 10%;
 		left: calc(100vw / 3.5);
 	}
-	@media (max-width: 1250px) {
+	@media (max-width : 1250px){
+		html{
+			width: 100%;
+			left: 0;
+			padding: 10%;
+		}
+	}
+	@media (max-width: 550px) {
 		html {
-			left:auto;
-			margin-left: calc(100vw / 35);
+			width: max-content;
+			left:0;
+			padding: 0%;
 		}
 	}
 </style>

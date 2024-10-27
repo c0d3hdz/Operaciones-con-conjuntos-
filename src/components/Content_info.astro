@@ -1,12 +1,86 @@
 ---
 ---
-<section>
-    <div class="mt-20 h-80 w-96 border border-lime-400 overflow-hidden p-5 box-border">
-        <h3>
-            LOREM
+<section class="content">
+    <div class="responsive-container flex flex-col m-auto mt-10 border border-lime-700 overflow-hidden p-5 box-border" style="max-width: 100%; width: 800px;">
+        <h3 class="[text-shadow:_0_4px_8px_rgba(119_220_22_/_0.5)] text-lime-400 text-2xl md:text-2xl leading-snug font-manrope font-extrabold ">
+            Teoría de Conjuntos
         </h3>
-        <span class=" text-balance">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed neque quisquam veritatis expedita ratione. Nesciunt laborum distinctio harum deserunt repellat.
+        <span class=" text-balance p-3">
+            La teoría de conjuntos es una rama fundamental de las matemáticas que se enfoca en la colección de objetos, 
+            llamados elementos, que tienen algo en común. Los conjuntos se denotan comúnmente con letras mayúsculas, como 
+            𝐴, 𝐵 o 𝐶, y sus elementos se escriben entre llaves, por ejemplo: <mark class="bg-lime-400 p-1 ">A={"{ 1,2,3 }"}</mark>
+        </span>
+        <h4 class="[text-shadow:_0_4px_8px_rgba(119_220_22_/_0.5)] text-lime-400 text-2xl md:text-2xl leading-snug font-manrope font-extrabold ">
+            Operaciones con Conjuntos
+        </h4>
+        <span class=" text-balance p-3">
+            Las operaciones con conjuntos permiten combinar, comparar y analizar diferentes conjuntos. Estas son las operaciones más comunes:
+            <li>  
+                Unión ( ∪ )    
+                <ul>
+                    <li class=" pl-8">
+                        La unión de dos conjuntos 𝐴 y 𝐵 es un nuevo conjunto que contiene todos los elementos de 𝐴 y de 𝐵, sin repetir elementos.
+                        Se representa como: <br>
+                        A∪B={"{ x∣x∈A o x∈B }"}
+                    </li>
+                </ul>
+            </li>
+
+            <li>  
+                Intersección ( ∩ )   
+                <ul>
+                    <li class=" pl-8">
+                        La intersección de dos conjuntos 𝐴 y 𝐵 es el conjunto de los elementos que ambos conjuntos tienen en común.
+                        Se representa como: <br>
+                        A∩B={"{ x∣x∈A y x∈B }"}
+                    </li>
+                </ul>
+            </li>
+
+            <li>  
+                Diferencia ( - )  
+                <ul>
+                    <li class=" pl-8">
+                        La diferencia entre dos conjuntos 𝐴 y 𝐵 es el conjunto de los elementos que están en 𝐴 pero no en 𝐵.
+                        Se representa como:<br>
+                        A−B={"{ x∣x∈A y x∈/B }"}
+                    </li>
+                </ul>
+            </li>
+
+            <li>  
+                Diferencia Simétrica ( Δ )
+                <ul>
+                    <li class=" pl-8">
+                        La diferencia simétrica entre dos conjuntos 𝐴 y 𝐵 es el conjunto de elementos que están en 𝐴 o en 𝐵 pero no en ambos.
+                        Se representa como:<br>
+                        A△B=(A−B)∪(B−A)
+                    </li>
+                </ul>
+            </li>
         </span>
     </div>
 </section>
+</div>
+
+<style>
+    li{
+        margin-top: 10px;
+    }
+    @media (min-width: 1024px) {
+        .responsive-container {
+            width: 800px;
+        }
+    }
+    @media (max-width: 1024px) and (min-width: 768px) {
+        .responsive-container {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .responsive-container {
+            width: 90%;
+        }
+    }
+</style>

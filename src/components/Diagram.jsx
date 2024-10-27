@@ -37,7 +37,7 @@ const VennDiagram = ({ setA, setB }) => {
 
                 {setA_dif.map((valor, indice) => {
                     const column = Math.floor(indice / 5)
-                    const row = indice % 3
+                    const row = indice % 5
 
                     return (
                         <text
@@ -55,7 +55,7 @@ const VennDiagram = ({ setA, setB }) => {
 
                 {setB_dif.map((valor, indice) => {
                     const column = Math.floor(indice / 5)
-                    const row = indice % 3
+                    const row = indice % 5
 
                     return (
                         <text
