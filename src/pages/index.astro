@@ -3,17 +3,16 @@ import Layout from '../layouts/Layout.astro';
 import SetOperations from '../components/Operaciones';
 import Header from '../components/Head.astro'
 import Background from '../components/Background.astro'
-import Footer from '../components/Footer.astro';
+
 ---
 
 <Layout title="Operaciones con conjuntos.">
 	<main>
 		<Background/>
 		<Header/>
-		<SetOperations client:visible/>
-		
+		<SetOperations client:visible/>	
 	</main>
-	<Footer/>
+
 </Layout>
 
 <style>
@@ -24,11 +23,5 @@ import Footer from '../components/Footer.astro';
 		font-size: 20px;
 		line-height: 1.6;
 	}
-	@media (max-width: 1250px) {
-		main{
-			padding-top: 50px;
-			margin-top: calc(100%/ 2);
-		}
-    }
 
 </style>
