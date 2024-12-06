@@ -17,12 +17,30 @@ import ContentInfo from '../components/Content_info.astro';
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
+	 main {
+        margin: auto;
+        padding: 1rem;
+        color: white;
+        font-size: 20px;
+        line-height: 1.6;
+        width: 90%;
+        max-width: 1200px;
+        box-sizing: border-box;
+    }
+
+    @media (max-width: 768px) {
+        main {
+            font-size: 18px;
+            padding: 0.8rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        main {
+            font-size: 16px;
+            padding: 0.5rem;
+        }
+    }
+
 
 </style>
